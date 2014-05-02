@@ -11,7 +11,7 @@ class GameObject:
     def __init__(self, image, speed):
         self.speed = speed
         self.image = image
-        self.pos = image.get_rect().move(self.speed)
+        self.pos = image.get_rect()
 
     def move(self):
         self.pos = self.pos.move(self.speed)
